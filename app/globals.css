@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    min-height: 100vh;
+}
+
+
+/* LOGIN */
+.loginPage{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+.loginPage .left{
+    width: 60%;
+    background-color: #5d5fef;
+    color: #ffffff;
+}
+.loginPage .left .top{
+    margin: 2rem 10%;
+}
+.loginPage .left .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10%;
+    margin-top: 15%;
+}
+.loginPage .left .bottom p{
+
+}
+.loginPage .left .bottom h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.loginPage .left .bottom .buttonGroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 1rem 0rem;
+}
+.loginPage .left .bottom button{
+    color: #ffffff;
+    background-color: transparent;
+    padding: 5px 8px;
+    /* margin: 1rem; */
+    width: max-content;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+}
+
+.loginPage .right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    padding-left: 5%;
+}
+.loginPage .right h2{
+    font-size:2rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+.loginPage .right form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginPage .right form .inputField{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0.5rem 0rem;
+}
+.loginPage .right form .inputField label{
+    font-size: 90%;
+    color: #ffffff;
+}
+.loginPage .right form .inputField input{
+    outline: 2px solid #ffffff95;
+    border-radius: 5px;
+    padding: 0.4rem;
+    color: #ffffff;
+    background-color: transparent;
+    margin: 5px 0px;
+}
+
+.loginPage .right form button{
+    background-color: #b2baff;
+    color: #000000;
+    padding: 8px 12px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+
+/* TABLE */
+.tablePage{
+    width: 100%;
+    padding: 5% 0% 12.5% 0%;
+}
+.tablePage .tableHeading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.tablePage .tableHeading p{
+    margin-left: 12.5%;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.tablePage .tableTop{
+    width: 100%;
+}
+.tablePage .tableWrapper{
+    width: 75%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.tablePage .tableWrapper .inputWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.tablePage input{
+    border: none;
+    outline: none;
+
+}
+table{
+    border: 1px solid #000000;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    /* padding: 3rem; */
+    border-spacing: 5px;
+    padding: 5%;
+}
+th{
+    position: relative;
+    width: 25%;
+}
+table, th {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem 1rem;
+}
+table th .header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+table tbody td{
+    margin: auto;
+    border-bottom: 1px solid black;
+    padding: 0.5rem 1rem;
+}
+.evenColor{
+    background-color: #e6e6e6;
+}
+.bottomController{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    background-color: #e6e6e6;
+    border-radius: 60px;
+    border: 1px solid #000000;
+    position: fixed;
+    transform: translate(-50%,-50%);
+}
+.bottomController button, .bottomController span{
+    margin: 1.5rem;
+}
